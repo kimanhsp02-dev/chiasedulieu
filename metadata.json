@@ -1,0 +1,6 @@
+{
+  "name": "Kho Liên Kết",
+  "description": "Ứng dụng hiện đại để lưu trữ, quản lý và chia sẻ các liên kết cá nhân một cách dễ dàng và an toàn.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

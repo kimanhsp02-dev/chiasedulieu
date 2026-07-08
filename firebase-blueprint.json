@@ -1,0 +1,42 @@
+{
+  "entities": {
+    "Link": {
+      "title": "Link",
+      "description": "Thực thể liên kết trong kho dữ liệu chia sẻ liên kết",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Tiêu đề của liên kết"
+        },
+        "url": {
+          "type": "string",
+          "description": "Địa chỉ URL đầy đủ"
+        },
+        "description": {
+          "type": "string",
+          "description": "Mô tả ngắn gọn về liên kết"
+        },
+        "category": {
+          "type": "string",
+          "description": "Chuyên mục của liên kết"
+        },
+        "tags": {
+          "type": "array",
+          "description": "Danh sách các từ khóa đi kèm"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Thời gian tạo (ISO String hoặc Server Timestamp)"
+        }
+      },
+      "required": ["title", "url", "category", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/links": {
+      "schema": "Link",
+      "description": "Bộ sưu tập lưu trữ các liên kết chia sẻ công khai"
+    }
+  }
+}
